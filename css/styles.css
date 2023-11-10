@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+@page {
+  size: letter;
+  margin: 0mm;
+  padding: 0mm;
+  border: 0mm;
+  top: 0mm;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  right: 50%;
+}
+#printBorder {
+  border: 1px solid lightgray;
+}
+#printContainer {
+  box-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8.5in;
+  height: 11in;
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+textarea {
+  resize: none;
+  border: 0.5px solid lightgray;
+}
+
+#sec-title {
+  font-size: 23px;
+  border-bottom: 1px solid #177858;
+  color: #177858;
+  width: 100%;
+  text-align: center;
+}
+/* HEADER */
+
+#resume-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: #177858;
+  color: white;
+  padding-top: 12px;
+}
+#name {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+#address {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  height: 100px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+#phone {
+  font-size: 13px;
+  text-align: center;
+  color: white;
+}
+#email {
+  font-size: 13px;
+  text-align: center;
+  color: white;
+}
+/* END HEADER */
+
+/*  ABOUT */
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 20px;
+  padding-bottom: 12px;
+}
+/* END ABOUT */
+
+/* EXP */
+#exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 80%;
+  margin-top: 60px;
+  font-size: 23px;
+  text-align: left;
+}
+#job-title {
+  font-size: 17px;
+  color: black;
+}
+#job-date {
+  font-size: 16px;
+  color: black;
+}
+#job-desc {
+  font-size: 14px;
+  color: black;
+}
+/* END EXP */
+
+/* EDU */
+#edu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 80%;
+  margin-top: 60px;
+  font-size: 23px;
+}
+#edu-title {
+  font-size: 17px;
+  color: black;
+}
+#edu-date {
+  font-size: 16px;
+  color: black;
+}
+#edu-desc {
+  font-size: 14px;
+  color: black;
+}
+/* END EDU */
+
+/* SKILLS */
+#skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin-top: 60px;
+  font-size: 23px;
+}
+#skills ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 100%;
+  font-size: 14px;
+  color: black;
+}
+/* END SKILLS */
+
+#print-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  background-color: #cba135;
+  color: white;
+  padding: 8px;
+  border-radius: 7px;
+  margin: 15px;
+}
+#print-btn:hover {
+  background-color: #a17914;
+  color: white;
+  cursor: pointer;
+}

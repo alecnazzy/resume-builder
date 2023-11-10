@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <title>Resume Builder</title>
+  </head>
+
+  <header>
+    <img src="images/icons8-resume-64.png" alt="" />
+    <h1>Resume Builder</h1>
+  </header>
+
+  <body>
+    <div id="printBorder">
+      <div id="printContainer">
+        <!-- RESUME HEADER -->
+        <div id="resume-header">
+          <textarea
+            name="name"
+            placeholder="Full Name"
+            id="name"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <textarea
+            name="Address"
+            id="address"
+            cols="80"
+            rows="1"
+            placeholder="Address"
+          ></textarea>
+          <div id="contact">
+            <textarea
+              name="phone"
+              id="phone"
+              cols="20"
+              rows="1"
+              placeholder="Phone number"
+            ></textarea>
+            <textarea
+              name="email"
+              id="email"
+              cols="50"
+              rows="1"
+              placeholder="Email"
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- ABOUT -->
+        <textarea
+          name="about"
+          id="about"
+          cols="25"
+          rows="5"
+          placeholder="About yourself"
+        ></textarea>
+
+        <!-- EXPERIENCE -->
+        <div id="exp">
+          <div id="sec-title">Professional Experience</div>
+          <textarea
+            name="title"
+            id="job-title"
+            cols="1"
+            rows="1"
+            placeholder="Job title"
+          ></textarea>
+          <textarea
+            name="date"
+            id="job-date"
+            cols="1"
+            rows="1"
+            placeholder="Starting date - end date"
+          ></textarea>
+          <textarea
+            name="job description"
+            id="job-desc"
+            cols="30"
+            rows="5"
+            placeholder="Job description"
+          ></textarea>
+        </div>
+
+        <!-- EDUCATION -->
+        <div id="edu">
+          <div id="sec-title">Education</div>
+          <textarea
+            name="school name"
+            id="edu-title"
+            cols="30"
+            rows="1"
+            placeholder="School name"
+          ></textarea>
+          <textarea
+            name="date"
+            id="edu-date"
+            cols="30"
+            rows="1"
+            placeholder="Starting date - end date"
+          ></textarea>
+          <textarea
+            name="description"
+            id="edu-desc"
+            cols="30"
+            rows="5"
+            placeholder="Education description"
+          ></textarea>
+        </div>
+
+        <!-- SKILLS -->
+        <div id="skills">
+          <div id="sec-title">Skills</div>
+          <ul>
+            <li>
+              <textarea name="" id="skill1" cols="30" rows="1"></textarea>
+            </li>
+            <li>
+              <textarea name="" id="skill2" cols="30" rows="1"></textarea>
+            </li>
+            <li>
+              <textarea name="" id="skill3" cols="30" rows="1"></textarea>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- PRINT BUTTON -->
+    <button
+      id="print-btn"
+      onclick="
+      removeBorder();
+      printContent('printContainer');"
+    >
+      Print
+    </button>
+    <script src="scripts/app.js"></script>
+  </body>
+
+  <footer>
+    <h3>
+      © 2023
+      <a href="https://alecnazzy.com/" target="_blank">alecnazzy.com</a>
+    </h3>
+    <a
+      href="https://github.com/alecnazzy/resume-builder"
+      target="_blank"
+      id="gh-foot-icon"
+    >
+      <img src="images/icons8-github-30.png" alt="github" />
+    </a>
+  </footer>
+</html>
