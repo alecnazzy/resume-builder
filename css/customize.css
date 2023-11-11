@@ -1,0 +1,97 @@
+#customizeContainer {
+  top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* COLORS */
+#color-picker {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+#color-options {
+  display: flex;
+  flex-direction: row;
+}
+#cornflowerblue-btn {
+  background-color: #6495ed;
+  border: none;
+  /* border-radius: 50%; */
+  border-radius: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+#darkpurple-btn {
+  background-color: #3c1b43;
+  border: none;
+  /* border-radius: 50%; */
+  border-radius: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+#magenta-btn {
+  background-color: #922d50;
+  border: none;
+  /* border-radius: 50%; */
+  border-radius: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+#midnightgreen-btn {
+  background-color: #113537;
+  border: none;
+  /* border-radius: 50%; */
+  border-radius: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+#coral-btn {
+  background-color: #fc814a;
+  border: none;
+  /* border-radius: 50%; */
+  border-radius: 0;
+  margin-left: 0;
+}
+
+#addExp-btn {
+  background-color: #3993dd;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px;
+  margin: 15px;
+  width: 150px;
+  cursor: pointer;
+}
+
+#addEdu-btn {
+  background-color: #3993dd;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px;
+  margin: 15px;
+  width: 150px;
+  cursor: pointer;
+}
+#addSkill-btn {
+  background-color: #3993dd;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  padding: 8px;
+  margin: 15px;
+  width: 150px;
+  cursor: pointer;
+}

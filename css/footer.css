@@ -1,6 +1,7 @@
 footer {
-  background-color: #5ec597;
+  background-color: white;
   color: white;
+  color: #3993dd;
   text-align: center;
   font-size: 14px;
   bottom: 0;
@@ -10,16 +11,19 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border-top: 0.3px solid lightgray;
 }
 a {
   color: white;
+  color: #3993dd;
   text-decoration: none;
 }
 a:hover {
-  color: #cba135;
+  color: #0e5188;
 }
 img {
   width: 17px;
   height: 17px;
   margin: 0 5px;
+  /* fix color */
 }

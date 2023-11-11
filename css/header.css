@@ -5,8 +5,11 @@ header {
   align-items: center;
   width: 100%;
   height: 45px;
-  background-color: #5ec597;
+  background-color: #0d2c54;
+  background-color: white;
   color: white;
+  color: #3993dd;
+  border-bottom: 0.3px solid lightgray;
 }
 h1 {
   font-size: 30px;
