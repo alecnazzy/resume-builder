@@ -17,7 +17,7 @@
 
   <header>
     <img src="images/icons8-resume-64 (1).png" alt="" />
-    <h1>Resume Builder</h1>
+    <h2>Resume Builder</h2>
   </header>
 
   <body>
@@ -26,16 +26,16 @@
       <div class="left-column">
         <div id="customizeContainer">
           <div id="color-picker">
-            Color Picker
+            <h1>Palette</h1>
             <div id="color-options">
               <button
                 type="button"
-                id="cornflowerblue-btn"
-                onclick="changeColor('#6495ed')"
+                id="blue-btn"
+                onclick="changeColor('#3993dd')"
               ></button>
               <button
                 type="button"
-                id="darkpurple-btn"
+                id="purple-btn"
                 onclick="changeColor('#3C1B43')"
               ></button>
               <button
@@ -45,7 +45,7 @@
               ></button>
               <button
                 type="button"
-                id="midnightgreen-btn"
+                id="green-btn"
                 onclick="changeColor('#113537')"
               ></button>
               <button
@@ -56,23 +56,56 @@
             </div>
           </div>
 
-          <div id="addExp">
-            <button type="button" id="addExp-btn" onclick="addExp()">
-              + Add Work
-            </button>
+          <div id="addRemoveSec">
+            <h1>Add/Remove</h1>
+          <h3>Professional</h3>
+          <div id="expBtns">
+            <div id="addExp">
+              <button type="button" id="addExp-btn" onclick="addExp()">
+                +
+              </button>
+            </div>
+            <div id="removeExp">
+              <button type="button" id="removeExp-btn" onclick="removeExp()">
+                -
+              </button>
+            </div>
           </div>
 
-          <div id="addEdu">
-            <button type="button" id="addEdu-btn" onclick="addEdu()">
-              + Add Education
-            </button>
+          <h3>Education</h3>
+          <div id="eduBtns">
+            <div id="addEdu">
+              <button type="button" id="addEdu-btn" onclick="addEdu()">
+                +
+              </button>
+            </div>
+            <div id="removeEdu">
+              <button type="button" id="removeEdu-btn" onclick="removeEdu()">
+                -
+              </button>
+            </div>
           </div>
 
-          <div id="addSkill">
-            <button type="button" id="addSkill-btn" onclick="addSkill()">
-              + Add Skill
-            </button>
+            <h3>Skills</h3>
+            <div id="skillBtns">
+              <div id="addSkill">
+                <button type="button" id="addSkill-btn" onclick="addSkill()">
+                  + 
+                </button>
+              </div>
+              <div id="removeSkill">
+                <button
+                  type="button"
+                  id="removeSkill-btn"
+                  onclick="removeSkill()"
+                >
+                  -
+                </button>
+              </div>
+            </div>
+
           </div>
+        </div>
         </div>
       </div>
       <script src="scripts/customize.js"></script>
@@ -200,7 +233,6 @@
         <button
           id="print-btn"
           onclick="
-      removeBorder();
       printContent('printContainer');"
         >
           Print/Save
@@ -212,6 +244,7 @@
   </body>
 
   <footer>
+    <div id="foot-row">
     <h3>
       © 2023
       <a href="https://alecnazzy.com/" target="_blank">alecnazzy.com</a>
@@ -223,5 +256,6 @@
     >
       <img src="images/icons8-github-30 (1).png" alt="github" />
     </a>
+  </div>
   </footer>
 </html>

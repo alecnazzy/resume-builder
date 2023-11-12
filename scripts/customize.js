@@ -13,6 +13,11 @@ function addExp() {
     '<textarea name="title" id="job-title" cols="1" rows="1" placeholder="Job title"></textarea><textarea name="date" id="job-date" cols="1" rows="1" placeholder="Starting date - end date"></textarea><textarea name="job description" id="job-desc" cols="30" rows="3" placeholder="Job description"></textarea>'
   );
 }
+function removeExp() {
+  $("#exp").children().last().remove();
+  $("#exp").children().last().remove();
+  $("#exp").children().last().remove();
+}
 
 function addEdu() {
   // add another edu-item div to the #edu div
@@ -20,9 +25,17 @@ function addEdu() {
     '<textarea name="school" id="edu-title" cols="1" rows="1" placeholder="School name"></textarea><textarea name="date" id="edu-date" cols="1" rows="1" placeholder="Starting date - end date"></textarea><textarea name="description" id="edu-desc" cols="30" rows="3" placeholder="Education description"></textarea>'
   );
 }
+function removeEdu() {
+  $("#edu").children().last().remove();
+  $("#edu").children().last().remove();
+  $("#edu").children().last().remove();
+}
 
 function addSkill() {
   $("#skills ul").append(
     '<li><textarea name="skill" id="skill2" cols="30" rows="1" placeholder="Skill"></textarea></li>'
   );
+}
+function removeSkill() {
+  $("#skills ul").children().last().remove();
 }

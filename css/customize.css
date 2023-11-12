@@ -10,6 +10,25 @@ button {
   cursor: pointer;
 }
 
+h1 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-bottom: 0.3px solid lightgrey;
+}
+h3 {
+  margin: 0;
+  margin-top: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+}
+
 /* COLORS */
 #color-picker {
   display: flex;
@@ -24,15 +43,15 @@ button {
   display: flex;
   flex-direction: row;
 }
-#cornflowerblue-btn {
-  background-color: #6495ed;
+#blue-btn {
+  background-color: #3993dd;
   border: none;
   /* border-radius: 50%; */
   border-radius: 0;
   margin-right: 0;
   margin-left: 0;
 }
-#darkpurple-btn {
+#purple-btn {
   background-color: #3c1b43;
   border: none;
   /* border-radius: 50%; */
@@ -48,7 +67,7 @@ button {
   margin-right: 0;
   margin-left: 0;
 }
-#midnightgreen-btn {
+#green-btn {
   background-color: #113537;
   border: none;
   /* border-radius: 50%; */
@@ -64,34 +83,123 @@ button {
   margin-left: 0;
 }
 
+/* ADD/REMOVE SECTIONS */
+
+#addRemoveSec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#expBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  font-size: 20px;
+}
+
 #addExp-btn {
   background-color: #3993dd;
   color: white;
   border: none;
-  border-radius: 7px;
-  padding: 8px;
-  margin: 15px;
-  width: 150px;
+  /* border-radius: 50%; */
+  border-radius: 0;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#removeExp-btn {
+  background-color: #dd3947;
+  color: white;
+  border: none;
+  /* border-radius: 50%; */
+  border-radius: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#eduBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-size: 20px;
+  margin-bottom: 25px;
+  margin: 0 !important;
 }
 
 #addEdu-btn {
   background-color: #3993dd;
   color: white;
   border: none;
-  border-radius: 7px;
-  padding: 8px;
-  margin: 15px;
-  width: 150px;
+  /* border-radius: 50%; */
+  border-radius: 0;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#removeEdu-btn {
+  background-color: #dd3947;
+  color: white;
+  border: none;
+  /* border-radius: 50%; */
+  border-radius: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skillBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  font-size: 20px;
+  margin-bottom: 25px;
+  margin: 0 !important;
 }
 #addSkill-btn {
   background-color: #3993dd;
   color: white;
   border: none;
-  border-radius: 7px;
-  padding: 8px;
-  margin: 15px;
-  width: 150px;
+  /* border-radius: 50%; */
+  border-radius: 0;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#removeSkill-btn {
+  background-color: #dd3947;
+  color: white;
+  border: none;
+  /* border-radius: 50%; */
+  border-radius: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
