@@ -46,90 +46,51 @@ h3 {
 #blue-btn {
   background-color: #3993dd;
   border: none;
-  /* border-radius: 50%; */
-  border-radius: 0;
-  margin-right: 0;
-  margin-left: 0;
+  border-radius: 50%;
+  margin-right: 3px;
+  margin-left: 3px;
 }
 #purple-btn {
   background-color: #3c1b43;
   border: none;
-  /* border-radius: 50%; */
-  border-radius: 0;
-  margin-right: 0;
-  margin-left: 0;
+  border-radius: 50%;
+  margin-right: 3px;
+  margin-left: 3px;
 }
 #magenta-btn {
   background-color: #922d50;
   border: none;
-  /* border-radius: 50%; */
   border-radius: 0;
-  margin-right: 0;
-  margin-left: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  border-radius: 50%;
 }
 #green-btn {
   background-color: #113537;
   border: none;
-  /* border-radius: 50%; */
-  border-radius: 0;
-  margin-right: 0;
-  margin-left: 0;
+  border-radius: 50%;
+  margin-right: 3px;
+  margin-left: 3px;
 }
 #coral-btn {
   background-color: #fc814a;
   border: none;
-  /* border-radius: 50%; */
-  border-radius: 0;
-  margin-left: 0;
+  border-radius: 50%;
+  margin-right: 3px;
+  margin-left: 3px;
 }
 
-/* ADD/REMOVE SECTIONS */
-
+/* ADD/REMOVE */
 #addRemoveSec {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/* END ADD/REMOVE */
 
-#expBtns {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  font-size: 20px;
-}
-
-#addExp-btn {
-  background-color: #3993dd;
-  color: white;
-  border: none;
-  /* border-radius: 50%; */
-  border-radius: 0;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#removeExp-btn {
-  background-color: #dd3947;
-  color: white;
-  border: none;
-  /* border-radius: 50%; */
-  border-radius: 0;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#eduBtns {
+/* BUTTONS */
+#btn-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -139,12 +100,10 @@ h3 {
   margin-bottom: 25px;
   margin: 0 !important;
 }
-
-#addEdu-btn {
+#add-btn {
   background-color: #3993dd;
   color: white;
   border: none;
-  /* border-radius: 50%; */
   border-radius: 0;
   cursor: pointer;
   width: 40px;
@@ -153,11 +112,10 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-#removeEdu-btn {
+#remove-btn {
   background-color: #dd3947;
   color: white;
   border: none;
-  /* border-radius: 50%; */
   border-radius: 0;
   cursor: pointer;
   width: 40px;
@@ -166,40 +124,4 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-
-#skillBtns {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  font-size: 20px;
-  margin-bottom: 25px;
-  margin: 0 !important;
-}
-#addSkill-btn {
-  background-color: #3993dd;
-  color: white;
-  border: none;
-  /* border-radius: 50%; */
-  border-radius: 0;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#removeSkill-btn {
-  background-color: #dd3947;
-  color: white;
-  border: none;
-  /* border-radius: 50%; */
-  border-radius: 0;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* END BUTTONS */

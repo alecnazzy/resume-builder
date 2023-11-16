@@ -23,9 +23,13 @@ body {
   right: 50%;
   height: 100%;
 }
+
+/* the border that shows the ends of the print container */
 #printBorder {
   border: 0.3px solid lightgray;
+  overflow: hidden;
 }
+/* container in which will actually get printed/saved as pdf */
 #printContainer {
   box-decoration: none;
   display: flex;
@@ -37,16 +41,16 @@ body {
   padding: 0px;
   margin: 0px;
 }
+
 textarea {
   resize: none;
   border: 0.5px solid lightgray;
 }
 
-/* HEADER */
-
+/* RESUME HEADER */
 #resume-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -55,42 +59,73 @@ textarea {
   color: white;
   padding-top: 12px;
 }
-#name {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
+#resume-header textarea::placeholder {
   color: white;
-  height: 100px;
-}
-#address {
-  font-size: 17px;
-  display: flex;
-  text-align: center;
-  padding-top: 20px;
-  color: white;
-  height: 100px;
 }
 
+/* NAME */
+#fullname {
+  display: flex;
+  flex-direction: column;
+}
+#first-name {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 30px;
+  color: white;
+}
+#last-name {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 30px;
+  color: white;
+}
+/* END NAME */
+
+/* CONTACT */
 #contact {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   color: white;
 }
+#address {
+  color: white;
+  text-align: center;
+  text-align: right;
+  padding-right: 30px;
+  font-size: 15px;
+  width: 90%;
+}
 #phone {
   font-size: 15px;
   text-align: center;
+  text-align: right;
+  padding-right: 30px;
   color: white;
-  width: 50%;
+  width: 90%;
 }
 #email {
   font-size: 15px;
   text-align: center;
+  text-align: right;
+  padding-right: 30px;
   color: white;
-  width: 50%;
+  width: 90%;
 }
-/* END HEADER */
+#website {
+  font-size: 15px;
+  text-align: center;
+  text-align: right;
+  padding-right: 30px;
+  color: white;
+  width: 90%;
+}
+/* END CONTACT */
+/* END RESUME HEADER */
 
 /*  ABOUT */
 #about {
@@ -112,7 +147,7 @@ textarea {
   justify-content: center;
   align-items: left;
   width: 80%;
-  margin-top: 60px;
+  margin-top: 20px;
   font-size: 23px;
   text-align: left;
 }
@@ -127,6 +162,8 @@ textarea {
 #job-title {
   font-size: 17px;
   color: black;
+  font-weight: bolder;
+  margin-top: 10px;
 }
 #job-date {
   font-size: 16px;
@@ -135,6 +172,7 @@ textarea {
 #job-desc {
   font-size: 15px;
   color: black;
+  margin-top: 6px;
 }
 /* END EXP */
 
@@ -145,7 +183,7 @@ textarea {
   justify-content: center;
   align-items: left;
   width: 80%;
-  margin-top: 60px;
+  margin-top: 20px;
   font-size: 23px;
 }
 #edu-header {
@@ -158,6 +196,8 @@ textarea {
 #edu-title {
   font-size: 17px;
   color: black;
+  font-weight: bolder;
+  margin-top: 10px;
 }
 #edu-date {
   font-size: 16px;
@@ -166,6 +206,7 @@ textarea {
 #edu-desc {
   font-size: 15px;
   color: black;
+  margin-top: 6px;
 }
 /* END EDU */
 
@@ -176,7 +217,7 @@ textarea {
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin-top: 60px;
+  margin-top: 15px;
   font-size: 23px;
 }
 #skills-header {
@@ -194,9 +235,41 @@ textarea {
   width: 100%;
   font-size: 14px;
   color: black;
+  padding-left: 26px;
 }
 /* END SKILLS */
 
+/* PROJECTS */
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width: 80%;
+  margin-top: 20px;
+  font-size: 23px;
+}
+#projects-header {
+  font-size: 23px;
+  border-bottom: 1px solid #3993dd;
+  color: #3993dd;
+  width: 100%;
+  text-align: center;
+}
+#project-title {
+  font-size: 17px;
+  color: black;
+  font-weight: bolder;
+  margin-top: 10px;
+}
+#project-desc {
+  font-size: 15px;
+  color: black;
+  margin-top: 6px;
+}
+/* END PROJECTS */
+
+/* PRINT BUTTON */
 #print-btn {
   display: flex;
   flex-direction: row;
@@ -214,6 +287,7 @@ textarea {
   color: white;
   cursor: pointer;
 }
+/* END PRINT BUTTON */
 
 /* ROW AND COLUMNS */
 .row {
@@ -243,3 +317,67 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+/* END ROW AND COLUMNS */
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    height: 100%;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-column {
+    width: 100%;
+    height: fit-content;
+    margin: 0px;
+    display: block;
+    margin-top: 50px;
+  }
+  .right-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 460px;
+  }
+  #customizeContainer {
+    top: 0;
+  }
+  #printBorder {
+    overflow: hidden;
+  }
+  #printContainer {
+    width: 400px;
+    height: auto;
+  }
+  #resume-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+  }
+  #fullname {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 25px;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    color: white;
+  }
+}
+/* END MEDIA QUERIES */

@@ -6,6 +6,8 @@ function changeColor(color) {
   $("#edu-header").css("color", color);
   $("#skills-header").css("border-bottom", "1px solid" + color);
   $("#skills-header").css("color", color);
+  $("#projects-header").css("border-bottom", "1px solid" + color);
+  $("#projects-header").css("color", color);
 }
 
 function addExp() {
@@ -38,4 +40,14 @@ function addSkill() {
 }
 function removeSkill() {
   $("#skills ul").children().last().remove();
+}
+
+function addProject() {
+  $("#projects").append(
+    '<textarea name="project name" id="project-title" cols="30" rows="1" placeholder="Project name"></textarea><textarea name="description" id="project-desc" cols="30" rows="3" placeholder="Project description"></textarea>'
+  );
+}
+function removeProject() {
+  $("#projects").children().last().remove();
+  $("#projects").children().last().remove();
 }

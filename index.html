@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/customize.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="icon" href="images/icons8-resume-64 (1).png" />
     <title>Resume Builder</title>
   </head>
 
@@ -58,57 +59,62 @@
 
           <div id="addRemoveSec">
             <h1>Add/Remove</h1>
-          <h3>Professional</h3>
-          <div id="expBtns">
-            <div id="addExp">
-              <button type="button" id="addExp-btn" onclick="addExp()">
-                +
-              </button>
-            </div>
-            <div id="removeExp">
-              <button type="button" id="removeExp-btn" onclick="removeExp()">
-                -
-              </button>
-            </div>
-          </div>
-
-          <h3>Education</h3>
-          <div id="eduBtns">
-            <div id="addEdu">
-              <button type="button" id="addEdu-btn" onclick="addEdu()">
-                +
-              </button>
-            </div>
-            <div id="removeEdu">
-              <button type="button" id="removeEdu-btn" onclick="removeEdu()">
-                -
-              </button>
-            </div>
-          </div>
-
-            <h3>Skills</h3>
-            <div id="skillBtns">
-              <div id="addSkill">
-                <button type="button" id="addSkill-btn" onclick="addSkill()">
-                  + 
-                </button>
+            <h3>Professional</h3>
+            <div id="btn-row">
+              <div id="addExp">
+                <button type="button" id="add-btn" onclick="addExp()">+</button>
               </div>
-              <div id="removeSkill">
-                <button
-                  type="button"
-                  id="removeSkill-btn"
-                  onclick="removeSkill()"
-                >
+              <div id="removeExp">
+                <button type="button" id="remove-btn" onclick="removeExp()">
                   -
                 </button>
               </div>
             </div>
 
+            <h3>Education</h3>
+            <div id="btn-row">
+              <div id="addEdu">
+                <button type="button" id="add-btn" onclick="addEdu()">+</button>
+              </div>
+              <div id="removeEdu">
+                <button type="button" id="remove-btn" onclick="removeEdu()">
+                  -
+                </button>
+              </div>
+            </div>
+
+            <h3>Skills</h3>
+            <div id="btn-row">
+              <div id="addSkill">
+                <button type="button" id="add-btn" onclick="addSkill()">
+                  +
+                </button>
+              </div>
+              <div id="removeSkill">
+                <button type="button" id="remove-btn" onclick="removeSkill()">
+                  -
+                </button>
+              </div>
+            </div>
+
+            <h3>Projects</h3>
+            <div id="btn-row">
+              <div id="addProject">
+                <button type="button" id="add-btn" onclick="addProject()">
+                  +
+                </button>
+              </div>
+              <div id="removeProject">
+                <button type="button" id="remove-btn" onclick="removeProject()">
+                  -
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </div>
       <script src="scripts/customize.js"></script>
+      <!-- END CUSTOMIZATION -->
 
       <!-- RESUME TEMPLATE -->
       <div class="right-column">
@@ -116,21 +122,31 @@
           <div id="printContainer">
             <!-- RESUME HEADER -->
             <div id="resume-header">
-              <textarea
-                name="name"
-                placeholder="Full Name"
-                id="name"
-                cols="30"
-                rows="1"
-              ></textarea>
-              <textarea
-                name="Address"
-                id="address"
-                cols="80"
-                rows="1"
-                placeholder="Address"
-              ></textarea>
+              <div id="fullname">
+                <textarea
+                  name="first-name"
+                  placeholder="First Name"
+                  id="first-name"
+                  cols="20"
+                  rows="1"
+                ></textarea>
+                <textarea
+                  name="last-name"
+                  placeholder="Last Name"
+                  id="last-name"
+                  cols="20"
+                  rows="1"
+                ></textarea>
+              </div>
+
               <div id="contact">
+                <textarea
+                  name="Address"
+                  id="address"
+                  cols="20"
+                  rows="1"
+                  placeholder="Address"
+                ></textarea>
                 <textarea
                   name="phone"
                   id="phone"
@@ -144,6 +160,13 @@
                   cols="50"
                   rows="1"
                   placeholder="Email"
+                ></textarea>
+                <textarea
+                  name="website"
+                  id="website"
+                  cols="50"
+                  rows="1"
+                  placeholder="website"
                 ></textarea>
               </div>
             </div>
@@ -160,7 +183,6 @@
             <!-- EXPERIENCE -->
             <div id="exp">
               <div id="exp-header">Professional Experience</div>
-              <!-- <div id="exp-item"> -->
               <textarea
                 name="title"
                 id="job-title"
@@ -226,6 +248,23 @@
                 </li>
               </ul>
             </div>
+            <div id="projects">
+              <div id="projects-header">Projects</div>
+              <textarea
+                name="project name"
+                id="project-title"
+                cols="30"
+                rows="1"
+                placeholder="Project name"
+              ></textarea>
+              <textarea
+                name="description"
+                id="project-desc"
+                cols="30"
+                rows="3"
+                placeholder="Project description"
+              ></textarea>
+            </div>
           </div>
         </div>
 
@@ -233,11 +272,12 @@
         <button
           id="print-btn"
           onclick="
-      printContent('printContainer');"
+          printContent('printContainer');"
         >
           Print/Save
         </button>
       </div>
+      <!-- END RESUME TEMPLATE -->
     </div>
 
     <script src="scripts/app.js"></script>
@@ -245,17 +285,17 @@
 
   <footer>
     <div id="foot-row">
-    <h3>
-      © 2023
-      <a href="https://alecnazzy.com/" target="_blank">alecnazzy.com</a>
-    </h3>
-    <a
-      href="https://github.com/alecnazzy/resume-builder"
-      target="_blank"
-      id="gh-foot-icon"
-    >
-      <img src="images/icons8-github-30 (1).png" alt="github" />
-    </a>
-  </div>
+      <h3>
+        © 2023
+        <a href="https://alecnazzy.com/" target="_blank">alecnazzy.com</a>
+      </h3>
+      <a
+        href="https://github.com/alecnazzy/resume-builder"
+        target="_blank"
+        id="gh-foot-icon"
+      >
+        <img src="images/icons8-github-30 (1).png" alt="github" />
+      </a>
+    </div>
   </footer>
 </html>
