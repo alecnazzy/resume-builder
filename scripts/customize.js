@@ -12,7 +12,7 @@ function changeColor(color) {
 
 function addExp() {
   $("#exp").append(
-    '<textarea name="title" id="job-title" cols="1" rows="1" placeholder="Job title"></textarea><textarea name="date" id="job-date" cols="1" rows="1" placeholder="Starting date - end date"></textarea><textarea name="job description" id="job-desc" cols="30" rows="3" placeholder="Job description"></textarea>'
+    '<textarea name="title" id="job-title" class="animate__animated animate__backInLeft" cols="1" rows="1" placeholder="Job title"></textarea><textarea name="date" id="job-date" class="animate__animated animate__backInLeft" cols="1" rows="1" placeholder="Starting date - end date"></textarea><textarea name="job description" id="job-desc" class="animate__animated animate__backInLeft" cols="30" rows="3" placeholder="Job description"></textarea>'
   );
 }
 function removeExp() {
@@ -22,9 +22,8 @@ function removeExp() {
 }
 
 function addEdu() {
-  // add another edu-item div to the #edu div
   $("#edu").append(
-    '<textarea name="school" id="edu-title" cols="1" rows="1" placeholder="School name"></textarea><textarea name="date" id="edu-date" cols="1" rows="1" placeholder="Starting date - end date"></textarea><textarea name="description" id="edu-desc" cols="30" rows="3" placeholder="Education description"></textarea>'
+    '<textarea name="school" id="edu-title" class="animate__animated animate__backInLeft" cols="1" rows="1" placeholder="School name"></textarea><textarea name="date" id="edu-date" class="animate__animated animate__backInLeft" cols="1" rows="1" placeholder="Starting date - end date"></textarea><textarea name="description" id="edu-desc" class="animate__animated animate__backInLeft" cols="30" rows="3" placeholder="Education description"></textarea>'
   );
 }
 function removeEdu() {
@@ -35,7 +34,7 @@ function removeEdu() {
 
 function addSkill() {
   $("#skills ul").append(
-    '<li><textarea name="skill" id="skill2" cols="30" rows="1" placeholder="Skill"></textarea></li>'
+    '<li><textarea name="skill" id="skill2" class="animate__animated animate__backInLeft" cols="30" rows="1" placeholder="Skill"></textarea></li>'
   );
 }
 function removeSkill() {
@@ -44,7 +43,7 @@ function removeSkill() {
 
 function addProject() {
   $("#projects").append(
-    '<textarea name="project name" id="project-title" cols="30" rows="1" placeholder="Project name"></textarea><textarea name="description" id="project-desc" cols="30" rows="3" placeholder="Project description"></textarea>'
+    '<textarea name="project name" id="project-title" class="animate__animated animate__backInLeft" cols="30" rows="1" placeholder="Project name"></textarea><textarea name="description" id="project-desc" class="animate__animated animate__backInLeft" cols="30" rows="3" placeholder="Project description"></textarea>'
   );
 }
 function removeProject() {

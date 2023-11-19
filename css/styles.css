@@ -22,6 +22,7 @@ body {
   left: 50%;
   right: 50%;
   height: 100%;
+  /* background-image: linear-gradient(to bottom right, #80c3fb, #0658e6); */
 }
 
 /* the border that shows the ends of the print container */
@@ -40,6 +41,7 @@ body {
   text-align: left;
   padding: 0px;
   margin: 0px;
+  background-color: white;
 }
 
 textarea {

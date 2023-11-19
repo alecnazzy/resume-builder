@@ -104,7 +104,7 @@ h3 {
   background-color: #3993dd;
   color: white;
   border: none;
-  border-radius: 0;
+  border-radius: 10px 0 0 10px;
   cursor: pointer;
   width: 40px;
   height: 40px;
@@ -112,16 +112,22 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+#add-btn:hover {
+  background-color: #00a6ed;
+}
 #remove-btn {
   background-color: #dd3947;
+  border-radius: 0 10px 10px 0;
   color: white;
   border: none;
-  border-radius: 0;
   cursor: pointer;
   width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#remove-btn:hover {
+  background-color: #ff4d5a;
 }
 /* END BUTTONS */
