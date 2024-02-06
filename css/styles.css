@@ -94,37 +94,93 @@ textarea {
   width: 100%;
   color: white;
 }
+
 #address {
-  color: white;
-  text-align: center;
-  text-align: right;
-  padding-right: 30px;
   font-size: 15px;
-  width: 90%;
+  text-align: left;
+  /* padding-right: 30px; */
+  color: white;
+  width: 77%;
+  margin-bottom: 3px;
 }
+#addressBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 30px;
+}
+#addressBox img {
+  width: 20px;
+  height: 20px;
+  margin-top: -3px;
+  margin-left: auto;
+}
+
 #phone {
   font-size: 15px;
-  text-align: center;
-  text-align: right;
-  padding-right: 30px;
+  text-align: left;
   color: white;
-  width: 90%;
+  width: 77%;
+  margin-bottom: 3px;
 }
+#phoneBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 30px;
+}
+#phoneBox img {
+  width: 20px;
+  height: 20px;
+  margin-top: -3px;
+  margin-left: auto;
+}
+
 #email {
   font-size: 15px;
-  text-align: center;
-  text-align: right;
-  padding-right: 30px;
+  text-align: left;
   color: white;
-  width: 90%;
+  width: 77%;
+  margin-bottom: 3.5px;
 }
+#emailBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 30px;
+}
+#emailBox img {
+  width: 20px;
+  height: 20px;
+  margin-top: -3px;
+  margin-left: auto;
+}
+
 #website {
   font-size: 15px;
-  text-align: center;
-  text-align: right;
-  padding-right: 30px;
+  text-align: left;
   color: white;
-  width: 90%;
+  width: 77%;
+}
+#websiteBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 30px;
+}
+#websiteBox img {
+  width: 20px;
+  height: 20px;
+  margin-top: -3px;
+  margin-left: auto;
 }
 /* END CONTACT */
 /* END RESUME HEADER */
@@ -238,6 +294,7 @@ textarea {
   font-size: 14px;
   color: black;
   padding-left: 26px;
+  padding-top: 10px;
 }
 /* END SKILLS */
 
@@ -248,7 +305,7 @@ textarea {
   justify-content: center;
   align-items: left;
   width: 80%;
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 23px;
 }
 #projects-header {
